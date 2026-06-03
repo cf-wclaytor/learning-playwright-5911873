@@ -1,7 +1,10 @@
 {
   "name": "Playwright Testing",
   "image": "mcr.microsoft.com/playwright:v1.60.0-noble",
-  "forwardPorts": [9323],
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+  "forwardPorts": [9323, 6080, 5901],
   "postCreateCommand": "npm install",
   "customizations": {
     "vscode": {
